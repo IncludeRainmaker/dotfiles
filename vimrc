@@ -142,7 +142,7 @@ endif
 nmap <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
-let NERDTreeShowHidden=1
+"let NERDTreeShowHidden=1
 
 " Syntastic
 let g:syntastic_mode_map = { 'mode': 'passive' }
