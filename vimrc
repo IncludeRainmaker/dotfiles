@@ -29,6 +29,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'ervandew/supertab'
 Bundle 'rdnetto/YCM-Generator'
+Bundle 'mileszs/ack.vim'
+Bundle 'fidian/hexmode'
 
 call vundle#end()
 filetype plugin indent on
