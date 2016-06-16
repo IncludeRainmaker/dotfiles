@@ -13,8 +13,6 @@ Bundle 'VundleVim/Vundle.vim'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
@@ -24,13 +22,17 @@ Bundle 'rking/ag.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'slim-template/vim-slim'
-Bundle 'JuliaLang/julia-vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'ervandew/supertab'
 Bundle 'rdnetto/YCM-Generator'
 Bundle 'mileszs/ack.vim'
 Bundle 'fidian/hexmode'
+
+" Languages
+Bundle 'JuliaLang/julia-vim'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
 
 call vundle#end()
 filetype plugin indent on
