@@ -1,5 +1,5 @@
-set nocompatible   
-filetype off 
+set nocompatible
+filetype off
 set shell=/bin/bash
 let t_Co=256
 
@@ -28,6 +28,7 @@ Bundle 'ervandew/supertab'
 Bundle 'rdnetto/YCM-Generator'
 Bundle 'mileszs/ack.vim'
 Bundle 'fidian/hexmode'
+Bundle 'ntpeters/vim-better-whitespace'
 
 " Languages
 Bundle 'JuliaLang/julia-vim'
@@ -68,7 +69,7 @@ set ttyfast
 set nocompatible
 set laststatus=2
 set ruler
-set mouse=a 
+set mouse=a
 set diffopt+=vertical
 set formatoptions+=r,c,o
 
@@ -76,7 +77,7 @@ set formatoptions+=r,c,o
 
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0 
+let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 
 " Automatic formatting
