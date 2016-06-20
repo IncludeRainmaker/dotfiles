@@ -47,7 +47,7 @@ set cursorline
 set expandtab
 set modelines=0
 set shiftwidth=4
-set clipboard=unnamedplus
+set clipboard=unnamed
 set synmaxcol=128
 set ttyscroll=10
 set encoding=utf-8
@@ -69,6 +69,7 @@ set nocompatible
 set laststatus=2
 set ruler
 set mouse=a 
+set diffopt+=vertical
 
 "DISABLED SETTINGS
 "set formatoptions+=r,c,o
