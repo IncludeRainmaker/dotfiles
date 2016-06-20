@@ -69,7 +69,6 @@ set nocompatible
 set laststatus=2
 set ruler
 set mouse=a 
-set diffopt+=vertical
 
 "DISABLED SETTINGS
 "set formatoptions+=r,c,o
