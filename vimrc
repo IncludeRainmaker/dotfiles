@@ -70,9 +70,9 @@ set laststatus=2
 set ruler
 set mouse=a 
 set diffopt+=vertical
+set formatoptions+=r,c,o
 
 "DISABLED SETTINGS
-"set formatoptions+=r,c,o
 
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
