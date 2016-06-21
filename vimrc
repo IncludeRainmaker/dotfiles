@@ -167,7 +167,7 @@ let g:ctrlp_max_depth = 5
 set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 
 " Quit with :Q
-command -nargs=0 Quit :qa!
+command -nargs=0 Quit :q!
 
 " Set this to the name of your terminal that supports mouse codes.
 " Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
