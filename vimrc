@@ -74,6 +74,7 @@ set ruler
 set mouse=a
 set diffopt+=vertical
 set formatoptions+=r,c,o
+set lazyredraw
 
 "DISABLED SETTINGS
 
