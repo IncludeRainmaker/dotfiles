@@ -14,7 +14,6 @@ Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
@@ -29,6 +28,9 @@ Bundle 'rdnetto/YCM-Generator'
 Bundle 'mileszs/ack.vim'
 Bundle 'fidian/hexmode'
 Bundle 'ntpeters/vim-better-whitespace'
+Bundle 'lokaltog/vim-powerline'
+
+" Disablbled Plugins
 
 " Languages
 Bundle 'JuliaLang/julia-vim'
