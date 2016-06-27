@@ -17,7 +17,6 @@ Plugin 'tpope/vim-abolish'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'altercation/vim-colors-solarized'
@@ -31,9 +30,10 @@ Plugin 'lokaltog/vim-powerline'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mattesgroeger/vim-bookmarks'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Shougo/unite.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " Disablbled Plugins
+"Plugin 'Shougo/unite.vim'
 
 " Languages
 Plugin 'JuliaLang/julia-vim'
@@ -44,11 +44,10 @@ call vundle#end()
 filetype plugin indent on
 
 let mapleader=","
-
 syntax enable
 let g:solarized_termcolors=16
-
 colorscheme solarized
+set background=dark
 
 set cursorline
 set expandtab
@@ -94,15 +93,12 @@ let g:ycm_autoclose_preview_window_after_completion=1
 
 " Bookmarks
 let g:bookmark_auto_close = 1
-let g:bookmark_save_per_working_dir = 1
 let g:bookmark_auto_save = 1
-call unite#custom#profile('source/vim_bookmarks', 'context', {
-    \   'winheight': 13,
-    \   'direction': 'botright',
-    \   'start_insert': 0,
-    \   'keep_focus': 1,
-    \   'no_quit': 1,
-    \ })
+let g:bookmark_save_per_working_dir = 1
+
+"GitGutter
+let g:gitgutter_override_sign_column_highlight = 0
+highlight SignColumn ctermbg=none
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
