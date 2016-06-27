@@ -30,9 +30,10 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'lokaltog/vim-powerline'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mattesgroeger/vim-bookmarks'
-Plugin 'Shougo/unite.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " Disablbled Plugins
+"Plugin 'Shougo/unite.vim'
 
 " Languages
 Plugin 'JuliaLang/julia-vim'
@@ -45,7 +46,8 @@ filetype plugin indent on
 let mapleader=","
 
 syntax enable
-set background=dark
+let g:solarized_termcolors=16
+
 colorscheme solarized
 
 set cursorline
@@ -89,21 +91,13 @@ let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 
-" Unite
-call unite#custom#profile('source/vim_bookmarks', 'context', {
-    \   'winheight': 13,
-    \   'direction': 'botright',
-    \   'start_insert': 0,
-    \   'keep_focus': 1,
-    \   'no_quit': 1,
-    \ })
+" GitGutter
+let g:gitgutter_sign_column_always = 1
 
 " Bookmarks
 let g:bookmark_auto_close = 1
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_auto_save = 1
-highlight BookmarkSign ctermbg=NONE ctermfg=160
-highlight BookmarkLine ctermbg=194 ctermfg=NONE
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
