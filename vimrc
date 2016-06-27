@@ -7,35 +7,37 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 " Let Vundle manage Vundle
-Bundle 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
-"My Bundle
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-abolish'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'rking/ag.vim'
-Bundle 'slim-template/vim-slim'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'ervandew/supertab'
-Bundle 'rdnetto/YCM-Generator'
-Bundle 'mileszs/ack.vim'
-Bundle 'fidian/hexmode'
-Bundle 'ntpeters/vim-better-whitespace'
-Bundle 'lokaltog/vim-powerline'
-Bundle 'nelstrom/vim-visual-star-search'
+"My Plugins
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-abolish'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'rking/ag.vim'
+Plugin 'slim-template/vim-slim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ervandew/supertab'
+Plugin 'rdnetto/YCM-Generator'
+Plugin 'mileszs/ack.vim'
+Plugin 'fidian/hexmode'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'lokaltog/vim-powerline'
+Plugin 'nelstrom/vim-visual-star-search'
+Plugin 'mattesgroeger/vim-bookmarks'
+Plugin 'Shougo/unite.vim'
 
 " Disablbled Plugins
 
 " Languages
-Bundle 'JuliaLang/julia-vim'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
+Plugin 'JuliaLang/julia-vim'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
 
 call vundle#end()
 filetype plugin indent on
@@ -86,6 +88,22 @@ let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" Unite
+call unite#custom#profile('source/vim_bookmarks', 'context', {
+    \   'winheight': 13,
+    \   'direction': 'botright',
+    \   'start_insert': 0,
+    \   'keep_focus': 1,
+    \   'no_quit': 1,
+    \ })
+
+" Bookmarks
+let g:bookmark_auto_close = 1
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+highlight BookmarkSign ctermbg=NONE ctermfg=160
+highlight BookmarkLine ctermbg=194 ctermfg=NONE
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
