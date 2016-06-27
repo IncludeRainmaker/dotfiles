@@ -31,9 +31,9 @@ Plugin 'lokaltog/vim-powerline'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mattesgroeger/vim-bookmarks'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'Shougo/unite.vim'
 
 " Disablbled Plugins
-"Plugin 'Shougo/unite.vim'
 
 " Languages
 Plugin 'JuliaLang/julia-vim'
@@ -79,6 +79,7 @@ set mouse=a
 set diffopt+=vertical
 set formatoptions+=r,c,o
 set lazyredraw
+set updatetime=250
 
 "DISABLED SETTINGS
 
@@ -91,13 +92,17 @@ let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 
-" GitGutter
-let g:gitgutter_sign_column_always = 1
-
 " Bookmarks
 let g:bookmark_auto_close = 1
 let g:bookmark_save_per_working_dir = 1
 let g:bookmark_auto_save = 1
+call unite#custom#profile('source/vim_bookmarks', 'context', {
+    \   'winheight': 13,
+    \   'direction': 'botright',
+    \   'start_insert': 0,
+    \   'keep_focus': 1,
+    \   'no_quit': 1,
+    \ })
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
