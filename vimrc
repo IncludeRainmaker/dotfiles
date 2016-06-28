@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 set shell=/bin/bash
-let t_Co=256
+let &t_Co=256
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
@@ -17,23 +17,25 @@ Plugin 'tpope/vim-abolish'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-Plugin 'rking/ag.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'mileszs/ack.vim'
-Plugin 'fidian/hexmode'
 Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'lokaltog/vim-powerline'
 Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mattesgroeger/vim-bookmarks'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Shougo/unite.vim'
+Plugin 'shougo/vinarise.vim'
+Plugin 'fidian/hexmode'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Disablbled Plugins
-"Plugin 'Shougo/unite.vim'
+"Plugin 'lokaltog/vim-powerline'
 
 " Languages
 Plugin 'JuliaLang/julia-vim'
@@ -65,7 +67,6 @@ set expandtab
 set nowritebackup
 set noswapfile
 set nobackup
-set hlsearch
 set ignorecase
 set smartcase
 set smartindent
@@ -79,8 +80,12 @@ set diffopt+=vertical
 set formatoptions+=r,c,o
 set lazyredraw
 set updatetime=250
+set hlsearch
 
 "DISABLED SETTINGS
+
+"OTHER SETTING
+hi Search cterm=NONE ctermfg=NONE ctermbg=lightblue
 
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
@@ -90,6 +95,12 @@ let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
+
+"vim airline
+let g:airline_theme='base16_solarized'
+let g:airline_powerline_fonts=1
+let g:Powerline_symbols='unicode'
+set laststatus=2
 
 " Bookmarks
 let g:bookmark_auto_close = 1
