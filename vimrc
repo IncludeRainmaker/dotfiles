@@ -14,7 +14,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-abolish'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'slim-template/vim-slim'
@@ -28,13 +27,14 @@ Plugin 'nelstrom/vim-visual-star-search'
 Plugin 'mattesgroeger/vim-bookmarks'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Shougo/unite.vim'
 Plugin 'shougo/vinarise.vim'
 Plugin 'fidian/hexmode'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'terryma/vim-multiple-cursors'
 
 " Disablbled Plugins
+"Plugin 'Shougo/unite.vim'
 "Plugin 'lokaltog/vim-powerline'
 
 " Languages
@@ -98,7 +98,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 
 "vim airline
 let g:airline_theme='base16_solarized'
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
 
