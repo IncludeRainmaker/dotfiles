@@ -56,7 +56,6 @@ set expandtab
 set modelines=0
 set shiftwidth=4
 set clipboard=unnamed
-set synmaxcol=128
 set ttyscroll=10
 set encoding=utf-8
 set tabstop=4
@@ -70,9 +69,7 @@ set nobackup
 set ignorecase
 set smartcase
 set smartindent
-set expandtab
 set ttyfast
-set nocompatible
 set laststatus=2
 set ruler
 set mouse=a
@@ -83,6 +80,7 @@ set updatetime=250
 set hlsearch
 
 "DISABLED SETTINGS
+"set synmaxcol=128
 
 "OTHER SETTING
 hi Search cterm=NONE ctermfg=NONE ctermbg=lightblue
