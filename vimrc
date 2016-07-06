@@ -78,6 +78,7 @@ set formatoptions+=r,c,o
 set lazyredraw
 set updatetime=250
 set hlsearch
+set completeopt-=preview
 
 "DISABLED SETTINGS
 "set synmaxcol=128
