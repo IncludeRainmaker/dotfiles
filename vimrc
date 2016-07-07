@@ -37,10 +37,11 @@ Plugin 'terryma/vim-multiple-cursors'
 "Plugin 'Shougo/unite.vim'
 "Plugin 'lokaltog/vim-powerline'
 
-" Languages
+" Languages/Frameworks
 Plugin 'JuliaLang/julia-vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
+Plugin 'mitsuhiko/flask'
 
 call vundle#end()
 filetype plugin indent on
