@@ -1,6 +1,6 @@
 " MacVim GUI mode
 if has("gui_macvim")
-  set guifont=Monaco:h13
+  set guifont=Roboto\ Mono\ for\ Powerline:h14
   set guioptions=aAce
   set fuoptions=maxvert,maxhorz
   set noballooneval
