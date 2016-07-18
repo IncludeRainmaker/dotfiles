@@ -42,6 +42,7 @@ Plugin 'JuliaLang/julia-vim'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 Plugin 'mitsuhiko/flask'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
@@ -109,7 +110,8 @@ let g:bookmark_save_per_working_dir = 1
 
 "GitGutter
 let g:gitgutter_override_sign_column_highlight = 0
-highlight SignColumn ctermbg=none
+highlight SignColumn ctermbg=NONE
+highlight SignColumn guibg=NONE
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
