@@ -199,9 +199,6 @@ let g:ctrlp_max_depth = 5
 " Go programming
 set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 
-" Ag
-let g:ag_working_path_mode="r"
-
 " Quit with :Q
 command -nargs=0 Quit :q!
 
