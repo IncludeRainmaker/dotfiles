@@ -32,6 +32,8 @@ Plugin 'fidian/hexmode'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'honza/vim-snippets'
 Plugin 'drmikehenry/vim-fontsize'
 
 " Disablbled Plugins
