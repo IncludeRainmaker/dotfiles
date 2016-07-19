@@ -32,6 +32,7 @@ Plugin 'fidian/hexmode'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'drmikehenry/vim-fontsize'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
