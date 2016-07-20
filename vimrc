@@ -106,12 +106,20 @@ let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
 
+"Easy Motion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+nmap s <Plug>(easymotion-overwin-f)
+nmap s <Plug>(easymotion-overwin-f2)
+let g:EasyMotion_smartcase = 1
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
 " Bookmarks
 let g:bookmark_auto_close = 1
 let g:bookmark_auto_save = 1
 let g:bookmark_save_per_working_dir = 1
 
-"GitGutter
+"GitGutter,,
 let g:gitgutter_override_sign_column_highlight = 0
 highlight SignColumn ctermbg=NONE
 highlight SignColumn guibg=NONE
