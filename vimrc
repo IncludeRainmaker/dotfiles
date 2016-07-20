@@ -111,8 +111,9 @@ let g:EasyMotion_do_mapping = 0 " Disable default mappings
 nmap s <Plug>(easymotion-overwin-f)
 nmap s <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
+"map <Leader>j <Plug>(easymotion-j)
+"map <Leader>k <Plug>(easymotion-k)
+map <Leader>j <Plug>(easymotion-bd-jk)
 map <leader>w <Plug>(easymotion-bd-w)
 map <leader>e <Plug>(easymotion-bd-e)
 
