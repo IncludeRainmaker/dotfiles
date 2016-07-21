@@ -89,7 +89,7 @@ set completeopt-=preview
 "set synmaxcol=128
 
 "OTHER SETTING
-hi Search cterm=NONE ctermfg=NONE ctermbg=lightblue
+"hi Search cterm=NONE ctermfg=NONE ctermbg=lightblue
 
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
@@ -106,12 +106,22 @@ let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
 
+"Easy Motion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+nmap s <Plug>(easymotion-overwin-f2)
+let g:EasyMotion_smartcase = 1
+"map <Leader>j <Plug>(easymotion-j)
+"map <Leader>k <Plug>(easymotion-k)
+map <Leader>j <Plug>(easymotion-bd-jk)
+map <leader>w <Plug>(easymotion-bd-w)
+map <leader>e <Plug>(easymotion-bd-e)
+
 " Bookmarks
 let g:bookmark_auto_close = 1
 let g:bookmark_auto_save = 1
 let g:bookmark_save_per_working_dir = 1
 
-"GitGutter
+"GitGutter,,
 let g:gitgutter_override_sign_column_highlight = 0
 highlight SignColumn ctermbg=NONE
 highlight SignColumn guibg=NONE
@@ -201,9 +211,6 @@ let g:ctrlp_max_depth = 5
 
 " Go programming
 set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
-
-" Ag
-let g:ag_working_path_mode="r"
 
 " Quit with :Q
 command -nargs=0 Quit :q!
