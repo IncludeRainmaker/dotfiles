@@ -108,7 +108,7 @@ set laststatus=2
 
 "Easy Motion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
-nmap <leader>s <Plug>(easymotion-overwin-f2)
+nmap s <Plug>(easymotion-overwin-f2)
 let g:EasyMotion_smartcase = 1
 "map <Leader>j <Plug>(easymotion-j)
 "map <Leader>k <Plug>(easymotion-k)
