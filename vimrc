@@ -113,6 +113,7 @@ let g:EasyMotion_smartcase = 1
 "map <Leader>j <Plug>(easymotion-j)
 "map <Leader>k <Plug>(easymotion-k)
 map <Leader>j <Plug>(easymotion-bd-jk)
+map <Leader>k <Plug>(easymotion-bd-jk)
 map <leader>w <Plug>(easymotion-bd-w)
 map <leader>e <Plug>(easymotion-bd-e)
 
