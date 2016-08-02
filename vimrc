@@ -103,7 +103,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_python_binary_path = '/usr/bin/python3' "Python3 Support
 
 "vim airline
-let g:airline_theme='luna'
+let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
