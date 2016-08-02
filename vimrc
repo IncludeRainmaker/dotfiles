@@ -19,7 +19,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'slim-template/vim-slim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'mileszs/ack.vim'
 Plugin 'ntpeters/vim-better-whitespace'
@@ -35,6 +34,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'honza/vim-snippets'
 Plugin 'drmikehenry/vim-fontsize'
+Plugin 'ervandew/supertab'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
@@ -46,6 +46,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'
 Plugin 'mitsuhiko/flask'
 Plugin 'pangloss/vim-javascript'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,8 +54,8 @@ filetype plugin indent on
 let mapleader=","
 syntax enable
 let g:solarized_termcolors=16
-colorscheme solarized
 set background=dark
+colorscheme gruvbox
 
 set cursorline
 set expandtab
@@ -99,9 +100,10 @@ let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_enable_diagnostic_highlighting = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_python_binary_path = '/usr/bin/python3' "Python3 Support
 
 "vim airline
-let g:airline_theme='base16_solarized'
+let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
