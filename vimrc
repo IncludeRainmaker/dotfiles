@@ -126,8 +126,8 @@ let g:bookmark_save_per_working_dir = 1
 
 "GitGutter,,
 let g:gitgutter_override_sign_column_highlight = 0
-highlight SignColumn ctermbg=NONE
-highlight SignColumn guibg=NONE
+"highlight SignColumn ctermbg=NONE
+"highlight SignColumn guibg=NONE
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
