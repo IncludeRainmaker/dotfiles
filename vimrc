@@ -101,7 +101,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 
 "vim airline
-let g:airline_theme='bubblegum'
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
