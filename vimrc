@@ -17,7 +17,6 @@ Plugin 'tpope/vim-abolish'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'slim-template/vim-slim'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
 Plugin 'rdnetto/YCM-Generator'
@@ -35,10 +34,12 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'honza/vim-snippets'
 Plugin 'drmikehenry/vim-fontsize'
+Plugin 'morhetz/gruvbox'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
 "Plugin 'lokaltog/vim-powerline'
+"Plugin 'altercation/vim-colors-solarized'
 
 " Languages/Frameworks
 Plugin 'JuliaLang/julia-vim'
@@ -52,9 +53,8 @@ filetype plugin indent on
 
 let mapleader=","
 syntax enable
-let g:solarized_termcolors=16
-colorscheme solarized
 set background=dark
+colorscheme gruvbox
 
 set cursorline
 set expandtab
@@ -85,6 +85,8 @@ set updatetime=250
 set hlsearch
 set completeopt-=preview
 
+let g:enable_bold_font = 1
+
 "DISABLED SETTINGS
 "set synmaxcol=128
 
@@ -101,7 +103,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion=1
 
 "vim airline
-let g:airline_theme='base16_solarized'
+let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
