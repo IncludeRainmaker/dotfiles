@@ -90,8 +90,6 @@ let g:enable_bold_font = 1
 "DISABLED SETTINGS
 "set synmaxcol=128
 
-"OTHER SETTING
-"hi Search cterm=NONE ctermfg=NONE ctermbg=lightblue
 
 " YouCompleteMe Config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
@@ -126,8 +124,8 @@ let g:bookmark_save_per_working_dir = 1
 
 "GitGutter,,
 let g:gitgutter_override_sign_column_highlight = 0
-highlight SignColumn ctermbg=NONE
-highlight SignColumn guibg=NONE
+"highlight SignColumn ctermbg=NONE
+"highlight SignColumn guibg=NONE
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
