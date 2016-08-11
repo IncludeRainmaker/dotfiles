@@ -1,0 +1,2 @@
+# Usefull Git Commands
+git diff --stat (git hash-object -t /dev/null)
