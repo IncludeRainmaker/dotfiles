@@ -103,6 +103,9 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_python_binary_path = '/usr/bin/python3' "Python3 Support
 "let g:ycm_autoclose_preview_window_after_completion = 1
 
+" WhiteSpace Highlighting
+let g:better_whitespace_enabled = 0
+
 "vim airline
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
