@@ -83,6 +83,7 @@ set formatoptions+=r,c,o
 set lazyredraw
 set updatetime=250
 set hlsearch
+set colorcolumn=80
 
 let g:enable_bold_font = 1
 
