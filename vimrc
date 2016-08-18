@@ -1,6 +1,6 @@
 set nocompatible
 filetype off
-set shell=/bin/bash
+"set shell=/bin/bash
 let &t_Co=256
 
 set rtp+=~/.vim/bundle/Vundle.vim/
