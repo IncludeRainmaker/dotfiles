@@ -61,7 +61,7 @@ set cursorline
 set expandtab
 set modelines=0
 set shiftwidth=4
-set clipboard=unnamed
+set clipboard=unnamedplus
 set ttyscroll=10
 set encoding=utf-8
 set tabstop=4
