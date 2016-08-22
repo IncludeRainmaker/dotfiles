@@ -35,7 +35,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'honza/vim-snippets'
 Plugin 'drmikehenry/vim-fontsize'
 Plugin 'morhetz/gruvbox'
-Plugin 'xolox/vim-lua-ftplugin'
+Plugin 'tbastos/vim-lua'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
