@@ -66,9 +66,9 @@ set modelines=0
 set shiftwidth=4
 set clipboard=unnamed
 if !has('nvim')
-    set ttymouse=xterm2
-    set ttyscroll=10
-    set ttyfast
+  set ttymouse=xterm2
+  set ttyscroll=10
+  set ttyfast
 endif
 set encoding=utf-8
 set tabstop=4
@@ -87,10 +87,11 @@ set ruler
 set mouse=a
 set diffopt+=vertical
 set formatoptions+=r,c,o
-set lazyredraw
 set updatetime=250
 set hlsearch
 set colorcolumn=80
+set lazyredraw
+" :mode to reset window
 
 let g:enable_bold_font = 1
 
