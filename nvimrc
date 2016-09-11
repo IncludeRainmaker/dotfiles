@@ -1,6 +1,3 @@
-if !has('nvim')
-  set nocompatible
-endif
 filetype off
 "set shell=/bin/bash
 let &t_Co=256
@@ -19,7 +16,6 @@ Plugin 'tpope/vim-abolish'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'slim-template/vim-slim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'mileszs/ack.vim'
@@ -39,11 +35,13 @@ Plugin 'drmikehenry/vim-fontsize'
 Plugin 'morhetz/gruvbox'
 Plugin 'tbastos/vim-lua'
 Plugin 'tpope/vim-sleuth'
+Plugin 'Shougo/deoplete.nvim'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
 "Plugin 'lokaltog/vim-powerline'
 "Plugin 'altercation/vim-colors-solarized'
+"Plugin 'Valloric/YouCompleteMe'
 
 " Languages/Frameworks
 " Plugin 'JuliaLang/julia-vim'
@@ -65,11 +63,6 @@ set expandtab
 set modelines=0
 set shiftwidth=4
 set clipboard=unnamed
-if !has('nvim')
-  set ttymouse=xterm2
-  set ttyscroll=10
-  set ttyfast
-endif
 set encoding=utf-8
 set tabstop=4
 set autoindent
@@ -95,20 +88,16 @@ set lazyredraw
 
 let g:enable_bold_font = 1
 
+
 "DISABLED SETTINGS
 "set synmaxcol=128
 "set completeopt-=preview
 
+" deoplete settings
+let g:deoplete#enable_at_startup = 1
 
-" YouCompleteMe Config
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-"let g:ycm_autoclose_preview_window_after_completion = 1
+" SuperTab Settings
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " WhiteSpace Highlighting
 let g:better_whitespace_enabled = 0
