@@ -35,6 +35,7 @@ Plugin 'drmikehenry/vim-fontsize'
 Plugin 'morhetz/gruvbox'
 Plugin 'tbastos/vim-lua'
 Plugin 'shougo/deoplete.nvim'
+Plugin 'tpope/vim-sleuth'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
@@ -42,11 +43,13 @@ Plugin 'shougo/deoplete.nvim'
 "Plugin 'altercation/vim-colors-solarized'
 
 " Languages/Frameworks
-Plugin 'JuliaLang/julia-vim'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'mitsuhiko/flask'
 Plugin 'pangloss/vim-javascript'
+
+" Disabled Languages
+" Plugin 'JuliaLang/julia-vim'
+" Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-rake'
+" Plugin 'mitsuhiko/flask'
 
 call vundle#end()
 filetype plugin indent on
@@ -61,18 +64,12 @@ set expandtab
 set modelines=0
 set shiftwidth=4
 set clipboard=unnamed
-if !has('nvim')
-    set ttymouse=xterm2
-    set ttyscroll=10
-    set ttyfast
-endif
 set encoding=utf-8
 set tabstop=4
 set autoindent
 set nowrap
 set number
 set expandtab
-set smarttab
 set nowritebackup
 set noswapfile
 set nobackup
