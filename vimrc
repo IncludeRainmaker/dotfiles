@@ -1,6 +1,5 @@
-set nocompatible
 filetype off
-set shell=/bin/bash
+"set shell=/bin/bash
 let &t_Co=256
 
 set rtp+=~/.vim/bundle/Vundle.vim/
@@ -17,8 +16,6 @@ Plugin 'tpope/vim-abolish'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'slim-template/vim-slim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'ervandew/supertab'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'mileszs/ack.vim'
@@ -35,33 +32,38 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'honza/vim-snippets'
 Plugin 'drmikehenry/vim-fontsize'
+Plugin 'morhetz/gruvbox'
+Plugin 'tbastos/vim-lua'
+Plugin 'shougo/deoplete.nvim'
+Plugin 'tpope/vim-sleuth'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
 "Plugin 'lokaltog/vim-powerline'
+"Plugin 'altercation/vim-colors-solarized'
 
 " Languages/Frameworks
-Plugin 'JuliaLang/julia-vim'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'mitsuhiko/flask'
 Plugin 'pangloss/vim-javascript'
+
+" Disabled Languages
+" Plugin 'JuliaLang/julia-vim'
+" Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-rake'
+" Plugin 'mitsuhiko/flask'
 
 call vundle#end()
 filetype plugin indent on
 
 let mapleader=","
 syntax enable
-let g:solarized_termcolors=16
-colorscheme solarized
 set background=dark
+colorscheme gruvbox
 
 set cursorline
 set expandtab
 set modelines=0
 set shiftwidth=4
 set clipboard=unnamed
-set ttyscroll=10
 set encoding=utf-8
 set tabstop=4
 set autoindent
@@ -74,7 +76,6 @@ set nobackup
 set ignorecase
 set smartcase
 set smartindent
-set ttyfast
 set laststatus=2
 set ruler
 set mouse=a
@@ -83,25 +84,22 @@ set formatoptions+=r,c,o
 set lazyredraw
 set updatetime=250
 set hlsearch
-set completeopt-=preview
+set colorcolumn=80
+
+let g:enable_bold_font = 1
 
 "DISABLED SETTINGS
 "set synmaxcol=128
+"set completeopt-=preview
 
-"OTHER SETTING
-"hi Search cterm=NONE ctermfg=NONE ctermbg=lightblue
+" Deoplete.nvim
+let g:deoplete#enable_at_startup = 1
 
-" YouCompleteMe Config
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:ycm_enable_diagnostic_signs = 0
-let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion=1
+" WhiteSpace Highlighting
+let g:better_whitespace_enabled = 0
 
-"vim airline
-let g:airline_theme='base16_solarized'
+" vim airline
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
 set laststatus=2
@@ -124,8 +122,8 @@ let g:bookmark_save_per_working_dir = 1
 
 "GitGutter,,
 let g:gitgutter_override_sign_column_highlight = 0
-highlight SignColumn ctermbg=NONE
-highlight SignColumn guibg=NONE
+"highlight SignColumn ctermbg=NONE
+"highlight SignColumn guibg=NONE
 
 " WhiteSpace Auto Remove
 autocmd BufWritePre * StripWhitespace
@@ -216,7 +214,4 @@ set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 " Quit with :Q
 command -nargs=0 Quit :q!
 
-" Set this to the name of your terminal that supports mouse codes.
-" Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
-set ttymouse=xterm2
 " }}}

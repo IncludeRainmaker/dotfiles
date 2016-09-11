@@ -1,4 +1,4 @@
-set guifont=Roboto\ Mono\ for\ Powerline\ 14
+set guifont=Roboto\ Mono\ for\ Powerline:h14
 set guioptions=m
 
 " resize current buffer by +/- 5
