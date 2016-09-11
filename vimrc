@@ -62,7 +62,10 @@ set expandtab
 set modelines=0
 set shiftwidth=4
 set clipboard=unnamed
-set ttyscroll=10
+if !has('nvim')
+    set ttymouse=xterm2
+    set ttyscroll=10
+endif
 set encoding=utf-8
 set tabstop=4
 set autoindent
@@ -106,7 +109,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " WhiteSpace Highlighting
 let g:better_whitespace_enabled = 0
 
-"vim airline
+" vim airline
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
@@ -222,7 +225,4 @@ set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 " Quit with :Q
 command -nargs=0 Quit :q!
 
-" Set this to the name of your terminal that supports mouse codes.
-" Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
-set ttymouse=xterm2
 " }}}
