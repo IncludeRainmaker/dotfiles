@@ -38,6 +38,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'drmikehenry/vim-fontsize'
 Plugin 'morhetz/gruvbox'
 Plugin 'tbastos/vim-lua'
+Plugin 'tpope/vim-sleuth'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
@@ -45,11 +46,11 @@ Plugin 'tbastos/vim-lua'
 "Plugin 'altercation/vim-colors-solarized'
 
 " Languages/Frameworks
-Plugin 'JuliaLang/julia-vim'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-rake'
-Plugin 'mitsuhiko/flask'
-Plugin 'pangloss/vim-javascript'
+" Plugin 'JuliaLang/julia-vim'
+" Plugin 'tpope/vim-rails'
+" Plugin 'tpope/vim-rake'
+" Plugin 'mitsuhiko/flask'
+" Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
