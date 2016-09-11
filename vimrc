@@ -1,4 +1,6 @@
-set nocompatible
+if !has('nvim')
+    set nocompatible
+endif
 filetype off
 "set shell=/bin/bash
 let &t_Co=256
@@ -65,6 +67,7 @@ set clipboard=unnamed
 if !has('nvim')
     set ttymouse=xterm2
     set ttyscroll=10
+    set ttyfast
 endif
 set encoding=utf-8
 set tabstop=4
@@ -78,7 +81,6 @@ set nobackup
 set ignorecase
 set smartcase
 set smartindent
-set ttyfast
 set laststatus=2
 set ruler
 set mouse=a
