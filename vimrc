@@ -39,6 +39,7 @@ Plugin 'drmikehenry/vim-fontsize'
 Plugin 'morhetz/gruvbox'
 Plugin 'tbastos/vim-lua'
 Plugin 'tpope/vim-sleuth'
+Plugin 'jiangmiao/auto-pairs'
 
 " Disablbled Plugins
 "Plugin 'Shougo/unite.vim'
