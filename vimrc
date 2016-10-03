@@ -5,55 +5,52 @@ filetype off
 "set shell=/bin/bash
 let &t_Co=256
 
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-
-" Let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 "My Plugins
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-abolish'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'slim-template/vim-slim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ervandew/supertab'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'mileszs/ack.vim'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'nelstrom/vim-visual-star-search'
-Plugin 'mattesgroeger/vim-bookmarks'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'shougo/vinarise.vim'
-Plugin 'fidian/hexmode'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'honza/vim-snippets'
-Plugin 'drmikehenry/vim-fontsize'
-Plugin 'morhetz/gruvbox'
-Plugin 'tbastos/vim-lua'
-Plugin 'tpope/vim-sleuth'
-Plugin 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-abolish'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'slim-template/vim-slim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'ervandew/supertab'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+Plug 'mileszs/ack.vim'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'nelstrom/vim-visual-star-search'
+Plug 'mattesgroeger/vim-bookmarks'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'shougo/vinarise.vim'
+Plug 'fidian/hexmode'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'easymotion/vim-easymotion'
+Plug 'honza/vim-snippets'
+Plug 'drmikehenry/vim-fontsize'
+Plug 'morhetz/gruvbox'
+Plug 'tbastos/vim-lua'
+Plug 'tpope/vim-sleuth'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'pangloss/vim-javascript'
 
 " Disablbled Plugins
-"Plugin 'Shougo/unite.vim'
-"Plugin 'lokaltog/vim-powerline'
-"Plugin 'altercation/vim-colors-solarized'
+"Plug 'Shougo/unite.vim'
+"Plug 'lokaltog/vim-powerline'
+"Plug 'altercation/vim-colors-solarized'
 
 " Languages/Frameworks
-" Plugin 'JuliaLang/julia-vim'
-" Plugin 'tpope/vim-rails'
-" Plugin 'tpope/vim-rake'
-" Plugin 'mitsuhiko/flask'
-" Plugin 'pangloss/vim-javascript'
+" Plug 'JuliaLang/julia-vim'
+" Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rake'
+" Plug 'mitsuhiko/flask'
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 let mapleader=","
