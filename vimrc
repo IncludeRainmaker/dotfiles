@@ -37,7 +37,6 @@ Plug 'tbastos/vim-lua'
 Plug 'tpope/vim-sleuth'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'pangloss/vim-javascript'
 
 " Disablbled Plugins
 "Plug 'Shougo/unite.vim'
@@ -49,6 +48,9 @@ Plug 'pangloss/vim-javascript'
 " Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-rake'
 " Plug 'mitsuhiko/flask'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+
 
 call plug#end()
 filetype plugin indent on
