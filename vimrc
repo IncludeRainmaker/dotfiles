@@ -15,7 +15,7 @@ Plug 'tpope/vim-abolish'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'slim-template/vim-slim'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer' }
 Plug 'ervandew/supertab'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mileszs/ack.vim'
@@ -24,8 +24,6 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'mattesgroeger/vim-bookmarks'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'shougo/vinarise.vim'
-Plug 'fidian/hexmode'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-multiple-cursors'
@@ -33,21 +31,21 @@ Plug 'easymotion/vim-easymotion'
 Plug 'honza/vim-snippets'
 Plug 'drmikehenry/vim-fontsize'
 Plug 'morhetz/gruvbox'
-Plug 'tbastos/vim-lua'
 Plug 'tpope/vim-sleuth'
 Plug 'jiangmiao/auto-pairs'
-Plug 'mustache/vim-mustache-handlebars'
+Plug 'nathanaelkane/vim-indent-guides'
 
 " Disablbled Plugins
-"Plug 'Shougo/unite.vim'
-"Plug 'lokaltog/vim-powerline'
-"Plug 'altercation/vim-colors-solarized'
+"Plug 'shougo/vinarise.vim'
+"Plug 'fidian/hexmode'
 
 " Languages/Frameworks
 " Plug 'JuliaLang/julia-vim'
 " Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-rake'
-" Plug 'mitsuhiko/flask'
+Plug 'mitsuhiko/flask'
+Plug 'tbastos/vim-lua'
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'othree/html5.vim'
 Plug 'pangloss/vim-javascript'
 
@@ -61,9 +59,7 @@ set background=dark
 colorscheme gruvbox
 
 set cursorline
-set expandtab
 set modelines=0
-set shiftwidth=4
 set clipboard=unnamed
 if !has('nvim')
   set ttymouse=xterm2
@@ -71,11 +67,9 @@ if !has('nvim')
   set ttyfast
 endif
 set encoding=utf-8
-set tabstop=4
 set autoindent
 set nowrap
 set number
-set expandtab
 set nowritebackup
 set noswapfile
 set nobackup
@@ -99,6 +93,10 @@ let g:enable_bold_font = 1
 "set synmaxcol=128
 "set completeopt-=preview
 
+" Use Silver Searchre instead of Ack if it is installed
+if executable('ag')
+  let g:ackpr = 'ag --vimgrep'
+endif
 
 " YouCompleteMe Config
 let g:ycm_enable_diagnostic_signs = 0
