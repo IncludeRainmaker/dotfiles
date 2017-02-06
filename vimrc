@@ -61,6 +61,8 @@ colorscheme gruvbox
 set cursorline
 set modelines=0
 set clipboard=unnamed
+set sw=4
+set ts=4
 if !has('nvim')
   set ttymouse=xterm2
   set ttyscroll=10
@@ -99,6 +101,7 @@ if executable('ag')
 endif
 
 " YouCompleteMe Config
+"let g:ycm_global_ycm_extra_conf = 'path to .ycm_extra_conf.py'
 let g:ycm_enable_diagnostic_signs = 0
 let g:ycm_python_binary_path = 'python3'
 let g:ycm_enable_diagnostic_highlighting = 0
@@ -218,9 +221,6 @@ let g:ctrlp_working_path_mode = 2
 let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 5
-
-" Go programming
-set rtp+=/usr/local/Cellar/go/1.0.3/misc/vim
 
 " Quit with :Q
 command -nargs=0 Quit :q!
