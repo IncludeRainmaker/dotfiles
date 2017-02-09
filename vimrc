@@ -3,7 +3,7 @@ if !has('nvim')
 endif
 filetype off
 "set shell=/bin/bash
-let &t_Co=256
+let t_Co=256
 
 call plug#begin('~/.vim/plugged')
 
@@ -34,6 +34,8 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-sleuth'
 Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'shougo/denite.nvim'
+Plug 'hail2u/vim-css3-syntax'
 
 " Disablbled Plugins
 "Plug 'shougo/vinarise.vim'
@@ -61,8 +63,8 @@ colorscheme gruvbox
 set cursorline
 set modelines=0
 set clipboard=unnamed
-set sw=4
-set ts=4
+set shiftwidth=4
+set tabstop=4
 if !has('nvim')
   set ttymouse=xterm2
   set ttyscroll=10
@@ -116,7 +118,6 @@ let g:better_whitespace_enabled = 0
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='unicode'
-set laststatus=2
 
 "Easy Motion
 let g:EasyMotion_do_mapping = 0 " Disable default mappings
@@ -130,7 +131,6 @@ map <leader>w <Plug>(easymotion-bd-w)
 map <leader>e <Plug>(easymotion-bd-e)
 
 " Bookmarks
-let g:bookmark_auto_close = 1
 let g:bookmark_auto_save = 1
 let g:bookmark_save_per_working_dir = 1
 
