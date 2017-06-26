@@ -12,10 +12,11 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-rsi'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'slim-template/vim-slim'
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python ./install.py --clang-completer --system-libclang' }
 Plug 'ervandew/supertab'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mileszs/ack.vim'
