@@ -1,0 +1,16 @@
+[core]
+	excludesfile = /home/rainmaker/.gitignore_global
+	editor = nvim
+[user]
+	name = Austin M. Rademacher
+	email = arademacher@pretalen.com
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+[merge]
+	tool = vimdiff
+[mergetool]
+	path = nvim
+[mergetool "vimdiff"]
+	path = nvim
