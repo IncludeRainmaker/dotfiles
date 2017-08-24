@@ -37,20 +37,20 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'shougo/denite.nvim'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'fidian/hexmode'
 
 " Disablbled Plugins
 "Plug 'shougo/vinarise.vim'
-"Plug 'fidian/hexmode'
 
 " Languages/Frameworks
 " Plug 'JuliaLang/julia-vim'
 " Plug 'tpope/vim-rails'
 " Plug 'tpope/vim-rake'
-Plug 'mitsuhiko/flask'
-Plug 'tbastos/vim-lua'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'othree/html5.vim'
-Plug 'pangloss/vim-javascript'
+" Plug 'mitsuhiko/flask'
+" Plug 'tbastos/vim-lua'
+" Plug 'mustache/vim-mustache-handlebars'
+" Plug 'othree/html5.vim'
+" Plug 'pangloss/vim-javascript'
 
 
 call plug#end()

@@ -6,6 +6,7 @@
 	email = arademacher@pretalen.com
 [difftool]
 	prompt = false
+	tool = vimdiff
 [alias]
 	d = difftool
 [merge]

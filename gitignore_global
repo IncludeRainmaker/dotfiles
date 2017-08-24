@@ -2,6 +2,6 @@
 .DS_Store
 .idea/*
 cmake-build-debug/*
-CMakeLists.txt
+#CMakeLists.txt
 .ycm_extra_conf.py
 
