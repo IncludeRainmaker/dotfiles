@@ -9,7 +9,7 @@
 dir=~/.dotfiles                    # dotfiles directory
 olddir=~/.dotfiles_old             # old dotfiles backup directory
 #list of files/folders to symlink in homedir
-files="vimrc tmux.conf gvimrc gitignore_global zshrc nvimrc ideavimrc gitconfig"
+files="vimrc tmux.conf gvimrc gitignore_global zshrc nvimrc ideavimrc gitconfig Xresources"
 
 ##########
 
