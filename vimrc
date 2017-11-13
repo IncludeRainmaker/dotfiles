@@ -16,7 +16,7 @@ Plug 'tpope/vim-rsi'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'slim-template/vim-slim'
-Plug 'Valloric/YouCompleteMe', { 'do': 'python ./install.py --clang-completer --system-libclang' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clang-completer --system-libclang' }
 Plug 'ervandew/supertab'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug 'mileszs/ack.vim'
