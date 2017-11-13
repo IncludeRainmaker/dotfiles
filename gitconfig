@@ -15,3 +15,5 @@
 	path = nvim
 [mergetool "vimdiff"]
 	path = nvim
+[push]
+	default = simple
