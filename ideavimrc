@@ -7,7 +7,7 @@ set noerrorbells
 " Press `s` to activate AceJump
 map s :action AceAction<CR>
 " Press `F` to activate Target Mode
-map F :action AceTargetAction<CR>
+map ,l :action AceTargetAction<CR>
 " Press `f` to activate Line Mode
-map f :action AceLineAction<CR>
+map ,k :action AceLineAction<CR>
 
