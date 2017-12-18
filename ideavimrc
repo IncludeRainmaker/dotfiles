@@ -2,3 +2,13 @@ imap jj <Esc>
 set timeoutlen=1000
 set visualbell
 set noerrorbells
+
+
+" Press `f` to activate AceJump
+map s :action AceAction<CR>
+" Press `F` to activate Target Mode
+map F :action AceTargetAction<CR>
+" Press `g` to activate Line Mode
+map g :action AceLineAction<CR>
+
+
