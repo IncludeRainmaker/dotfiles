@@ -5,7 +5,7 @@
 	name = Austin M. Rademacher
 	email = arademacher@pretalen.com
 [difftool]
-	prompt = false
+	prompt = true
 	tool = vimdiff
 [alias]
 	d = difftool
