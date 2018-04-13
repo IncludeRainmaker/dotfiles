@@ -122,7 +122,8 @@ let g:ycm_confirm_extra_conf = 0
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " WhiteSpace Highlighting
-let g:better_whitespace_enabled = 0
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 " vim airline
 let g:airline_theme='gruvbox'
@@ -148,9 +149,6 @@ let g:bookmark_save_per_working_dir = 1
 let g:gitgutter_override_sign_column_highlight = 0
 "highlight SignColumn ctermbg=NONE
 "highlight SignColumn guibg=NONE
-
-" WhiteSpace Auto Remove
-autocmd BufWritePre * StripWhitespace
 
 " Automatic formatting
 autocmd BufWritePre *.rb :%s/\s\+$//e
