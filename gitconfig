@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /home/rmkr/.gitignore_global
+	excludesfile = /home/austin/.gitignore_global
 	editor = nvim
 [user]
 	name = Austin M. Rademacher
