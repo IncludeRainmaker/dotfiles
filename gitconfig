@@ -1,12 +1,12 @@
 [core]
 	excludesfile = /home/austin/.gitignore_global
-	editor = nvim
+	editor = code --wait
 [user]
 	name = Austin M. Rademacher
 	email = arademacher@pretalen.com
 [difftool]
 	prompt = true
-	tool = vimdiff
+	cmd = code --wait --diff $LOCAL $REMOTE
 [alias]
 	d = difftool
 [merge]
