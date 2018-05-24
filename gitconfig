@@ -4,14 +4,7 @@
 [user]
 	name = Austin M. Rademacher
 	email = arademacher@pretalen.com
-[difftool]
-	prompt = true
-	cmd = code --wait --diff $LOCAL $REMOTE
-[alias]
-	d = difftool
-[merge]
-	tool = vimdiff
-[mergetool]
-	path = nvim
-[mergetool "vimdiff"]
-	path = nvim
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
