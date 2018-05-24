@@ -1,9 +1,9 @@
 [core]
-	excludesfile = /home/austin/.gitignore_global
-	editor = code --wait
+    excludesfile = /home/austin/.gitignore_global
+    editor = code --wait
 [user]
-	name = Austin M. Rademacher
-	email = arademacher@pretalen.com
+    name = Austin M. Rademacher
+    email = arademacher@pretalen.com
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
