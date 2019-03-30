@@ -1,10 +1,23 @@
 [core]
-    excludesfile = /home/austin/.gitignore_global
+    excludesfile = /home/rmkr/.gitignore_global
     editor = code --wait
 [user]
     name = Austin M. Rademacher
-    email = arademacher@pretalen.com
+	email = arademacher@pretalen.com
+	signingKey = 85AFE86EDA8ED0F1626DD7A00A0E928E751B9085
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
     cmd = code --wait --diff $LOCAL $REMOTE
+[gc]
+	autoDetach = false
+[tag]
+	forceSignAnnotated = true
+[commit]
+	gpgSign = true
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
